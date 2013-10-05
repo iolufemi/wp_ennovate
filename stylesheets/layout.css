@@ -1,0 +1,737 @@
+/*
+
+* Skeleton V1.2
+
+* Copyright 2011, Dave Gamache
+
+* www.getskeleton.com
+
+* Free to use under the MIT license.
+
+* http://www.opensource.org/licenses/mit-license.php
+
+* 6/20/2012
+
+*/
+
+
+
+/* Table of Content
+
+==================================================
+
+	#Site Styles
+
+	#Page Styles
+
+	#Media Queries
+
+	#Font-Face */
+
+
+
+/* #Site Styles
+
+================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700|Oswald|Open+Sans:400italic,700italic,400,700|Kaushan+Script);
+
+
+
+*{
+
+    transition: all 0.2s ease-in-out;
+
+    -o-transition: all 0.2s ease-in-out;
+
+    -moz-transition: all 0.2s ease-in-out;
+
+    -webkit-transition: all 0.2s ease-in-out;
+
+    -ms-transition: all 0.2s ease-in-out;
+
+}
+
+
+
+img{
+
+    max-width:100%;
+
+    height: auto;
+
+    display:block;
+
+}
+
+
+
+iframe{
+
+    max-width:100%;
+
+}
+
+
+
+nav{
+
+    font-family: 'Oswald', sans-serif;
+
+    color: #fff;
+
+    float: right !important;
+
+}
+
+
+
+h1{
+
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+
+h2,h3,h4,h5,h6{
+
+    font-family: 'Arvo', serif;
+
+    text-align: center;
+
+    font-weight: bold;
+
+}
+
+
+
+h4 {
+
+    color: #555;
+
+}
+
+
+
+#contact h3{
+
+    font-family: 'Kaushan Script', cursive;
+
+    color: #84C12C;
+
+}
+
+
+
+body{
+
+    font-family: 'Open Sans', sans-serif;
+
+    margin-top: 95px;
+
+}
+
+
+
+nav ul {
+
+    float:right;
+
+    display:inline-block;
+
+    margin:0px;
+
+    padding:0px;
+
+    min-height: 86px;
+
+}
+
+
+
+nav li{
+
+    display:inline-block;
+
+    text-align:center;
+
+    margin:0px;
+
+    padding:15px 0px
+
+}
+
+
+
+nav li:hover, nav li.activepage{
+
+    display:inline-block;
+
+    text-align:center;
+
+    margin:0px;
+
+    padding:15px 0px;
+
+    background: #333333;
+
+    box-shadow: 0px 0px 3px #000;
+
+    -o-box-shadow: 0px 0px 3px #000;
+
+    -ms-box-shadow: 0px 0px 3px #000;
+
+    -webkit-box-shadow: 0px 0px 3px #000;
+
+    -moz-box-shadow: 0px 0px 3px #000;
+
+}
+
+
+
+nav li a, nav li a:visited{
+
+    padding:10px;
+
+    text-decoration:none;
+
+    text-align:center;
+
+    display:block;
+
+    color: #fff;
+
+}
+
+
+
+nav li:hover a, nav li.activepage a{
+
+    padding:10px;
+
+    text-decoration:none;
+
+    text-align:center;
+
+    display:block;
+
+    color: #848285;
+
+}
+
+
+
+nav li a span{
+
+    display:block;
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-style: italic;
+
+}
+
+
+
+nav li:hover a span, nav li.activepage a span{
+
+    display:block;
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-style: italic;
+
+    color: #84C12C;
+
+}
+
+
+
+nav li a hr{
+
+    border: 2px solid #333333;
+
+    margin:2px;
+
+}
+
+
+
+nav li:hover a hr, nav li.activepage a hr{
+
+    border: 2px solid #1C1C1C;
+
+}
+
+
+
+header#home{
+
+    background: #242424;
+
+    box-shadow: 0px 0px 5px #000;
+
+    -o-box-shadow: 0px 0px 5px #000;
+
+    -webkit-box-shadow: 0px 0px 5px #000;
+
+    -ms-box-shadow: 0px 0px 5px #000;
+
+    -moz-box-shadow: 0px 0px 5px #000;
+
+    border-bottom: 1px #000 solid;
+
+    position: fixed;
+
+    width: 100%;
+
+    top: 0px;
+
+    z-index: 999;
+
+}
+
+
+
+.logo {
+
+    padding-top: 7px;
+
+}
+
+
+
+header.inside h1{
+
+    text-align: center;
+
+    background: url(../images/shd.gif) repeat center left;
+
+    border-top: 1px #CCC solid;
+
+    padding: 10px 0px;
+
+    margin-top:0px;
+
+}
+
+
+
+.insidewrapper{
+
+    text-align: justify;
+
+}
+
+
+
+figure{
+
+    text-align: center;
+
+}
+
+
+
+.icon img{
+
+    max-height: 104px;
+
+    margin: auto;
+
+}
+
+
+
+.icon {
+
+    margin-bottom: 20px !important;
+
+    margin-top: 20px !important;
+
+}
+
+figcaption {
+
+    margin-top: 20px !important;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+}
+
+
+
+figure img{
+
+    margin:auto;
+
+}
+
+
+
+#contact{
+
+    color: #84C12C;
+
+    font-size:17px;
+
+    line-height: 35px;
+
+}
+
+
+
+#contact input, #contact textarea{
+
+    width:98%;
+
+    max-width: 420px !important;
+
+    float: right;
+
+}
+
+
+
+#contact input[type="submit"]{
+
+    width:100%;
+
+}
+
+
+
+#contact .form{
+
+    margin: auto;
+
+    float:none !important;
+
+    display:block;
+
+}
+
+
+
+b {
+
+    font-weight: bold;
+
+}
+
+
+
+#contact input[type="submit"],#contactus {
+
+    background: url(../images/button.gif) repeat-x left center;
+
+    height: 50px;
+
+    border: none;
+
+    margin: auto;
+
+    display: block;
+
+    font-weight: bold;
+
+    color: #FFF;
+
+    font-size: 18px;
+
+    text-shadow: none;
+
+}
+
+
+
+footer {
+
+    background: #4D4F4C;
+
+    color: #FFF;
+
+}
+
+
+
+footer img{
+
+    display:inline-block;
+
+    margin: 5px 0px 0px 5px;
+
+}
+
+
+
+footer .social{
+
+    float:right !important;
+
+    text-align:right
+
+}
+
+
+
+footer .copyright{
+
+    margin-top:20px
+
+}
+
+
+
+footer .copyright a{
+
+    color: #fff;
+
+    text-decoration:none;
+
+}
+
+
+
+.icon > figure span {
+
+    color: #B54E47;
+
+}
+
+
+
+#about{
+
+    background: #F3F3F3;
+
+}
+
+
+
+#blog{
+
+    background: #F3F3F3;
+
+}
+
+
+
+p {
+
+    display: inline-block;
+
+}
+
+
+
+#portfolio figure {
+
+    padding-bottom: 16px;
+
+    background: url(../images/shadow.gif) no-repeat bottom;
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+#portfolio figure img{
+
+    border:1px #928B8B solid;
+
+}
+
+#contact .form p {
+    display: block;
+}
+
+#contact .form form br {
+    display: none;
+    visibility: hidden;
+}
+
+#contact .form form label{
+    display:inline-block;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 13px;
+    width: 120px;
+}
+
+
+
+
+/* #Page Styles
+
+================================================== */
+
+
+@media screen and (min-width: 40em) {
+  #nav ul ul a {
+    display: none;
+  }
+}
+
+#nav-toggle {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 70px;
+  height: 94px;
+  float: right;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url("../images/hamburger.gif") no-repeat 50% 33%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.3), screen and (min--moz-device-pixel-ratio: 1.3), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-device-pixel-ratio: 1.3), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  #nav-toggle {
+    background-image: url("../images/hamburger-retina.gif");
+    -webkit-background-size: 100px 100px;
+    -moz-background-size: 100px 100px;
+    -o-background-size: 100px 100px;
+    background-size: 100px 100px;
+  }
+}
+
+
+/* #Media Queries
+
+================================================== */
+
+
+
+	/* Smaller than standard 960 (devices and browsers) */
+
+	@media only screen and (max-width: 959px) {}
+
+
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+
+
+	/* All Mobile Sizes (devices and browser) */
+
+	@media only screen and (max-width: 767px) {
+        .logo {
+            width: auto !important;
+            float: left;
+        }
+        #nav {
+    padding-top: 10px;
+            
+            
+        }
+        footer{
+        text-align: center !important;
+        }
+        .social {
+            text-align: center !important;
+        }
+        
+        nav li{
+
+            width:100% !important;
+        
+        
+
+            padding: 5px !important;
+
+}
+        
+        nav li a, nav li a:visited{
+    padding: 5px !important;
+
+
+        
+        }
+        
+        nav li:hover, nav li.activepage{
+
+            display:inline-block;
+        
+            text-align:center;
+        
+            background: #333333;
+        
+            box-shadow: none;
+        
+            -o-box-shadow: none;
+        
+            -ms-box-shadow: none;
+        
+            -webkit-box-shadow: none;
+        
+            -moz-box-shadow: none;
+
+            padding: 5px !important;
+
+}
+            
+            nav span, nav hr{
+                display:none !important
+            }
+
+    }
+
+
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+	@media only screen and (max-width: 479px) {}
+
+
+
+
+
+/* #Font-Face
+
+================================================== */
+
+/* 	This is the proper syntax for an @font-face file
+
+		Just create a "fonts" folder at the root,
+
+		copy your FontName into code below and remove
+
+		comment brackets */
+
+
+
+/*	@font-face {
+
+	    font-family: 'FontName';
+
+	    src: url('../fonts/FontName.eot');
+
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+
+	         url('../fonts/FontName.woff') format('woff'),
+
+	         url('../fonts/FontName.ttf') format('truetype'),
+
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+
+	    font-weight: normal;
+
+	    font-style: normal; }
+
+*/
